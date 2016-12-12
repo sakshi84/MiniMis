@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.inputform{float:left;
+width:400px;border:1px solid pink;border-radius:10px;padding:10px;
+}
+.inputform table tr td input,textarea,select{width:200px;}
+#gender1,#gender2{width:10px;}
+#submit{margin-left:100px;width:100px;}
+#reset{width:100px;}
+.design{background-color:red;color:white;padding-left:100px;}
+</style>
+</head>
+<body>
+
+<!-- header -->
+<h2>Student Details</h2>
+<h3 style="background-color:red;color:red;">c</h3>
+<!-- body -->
+
+<div class="inputform">
+<h2 class="design">Personal Info</h2>
+<form action="RegisterServlet" method="post">
+<table>
+<tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
+<tr><td>Roll No:</td><td><input type="text" name="name"/></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"/></td></tr>
+
+<tr><td>Gender:</td><td><input id="gender1" type="radio" name="gender" value="male"/>Male 
+<input type="radio" id="gender2" name="gender" value="female"/>Female
+</td></tr>
+<tr><td>Date Of Birth:</td><td><input type="date" name="dob"/></td></tr>
+
+<tr><td>Contact:</td><td><input type="text" name="contact"/></td></tr>
+</table>
+</form>
+</div>
+</body>
+
+<body>
+<div class="inputform">
+<h2 class="design">Admission Details</h2>
+<form action="RegisterServlet" method="post">
+<table>
+
+<tr><td>Date of Admission:</td><td><input type="text" name="name"/></td></tr>
+<tr><td>Admission Batch:</td><td><input type="text" name="name"/></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"/></td></tr>
+<tr><td>Branch:</td><td><input type="text" name="city"/></td></tr>
+<tr><td>Degree:</td><td><input type="text" name="state"/></td></tr>
+
+</table>
+</form>
+</div>
+
+
+
+
+
+
+</body>
+</html>
